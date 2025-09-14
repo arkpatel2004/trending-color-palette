@@ -117,3 +117,25 @@ document.addEventListener('DOMContentLoaded', () => {
     container.appendChild(createPaletteItem(palette, idx));
   });
 }); 
+
+// ... your existing palettes code ...
+
+// 🔥 ADD THIS AT THE END OF script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.palettes-container');
+  palettes.forEach((palette, idx) => {
+    container.appendChild(createPaletteItem(palette, idx));
+  });
+
+  // Initialize AdSense Auto Ads
+  if (typeof window !== 'undefined') {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-9997789586476189", // Replace with your actual ID
+        enable_page_level_ads: true
+      });
+    } catch (error) {
+      console.error('AdSense setup error:', error);
+    }
+  }
+});
