@@ -111,13 +111,6 @@ function createPaletteItem(palette, index) {
   return item;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector('.palettes-container');
-  palettes.forEach((palette, idx) => {
-    container.appendChild(createPaletteItem(palette, idx));
-  });
-}); 
-
 // ... your existing palettes code ...
 
 // 🔥 ADD THIS AT THE END OF script.js
